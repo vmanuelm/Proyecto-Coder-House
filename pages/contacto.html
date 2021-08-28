@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <title>contacto</title>
+</head>
+<body class="grid-contacto">
+    <header class="header">
+        <h2>Contacto</h2>
+    </header>
+    <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="texto-nav">página principal</a></li>
+                <li><a href="acercade.html" class="texto-nav"> acerca de</a></li>
+                <li><a href="servicios.html" class="texto-nav">servicios</a></li>
+                <li><a href="contacto.html" class="texto-nav">contacto</a></li>
+            </ul>
+        </nav> 
+        <main id="main_contacto">
+            <section id="formulario_contacto">
+                <form>
+                 <fieldset>
+                        <legend>Formulario de Contacto</legend>
+                        <div>
+                            <label for="Nombre y Apellido:">Nombre y Apellido:</label>
+                            <input type="text" name="Nombre y Apellido:" placeholder="Juan Pérez"/>
+                        </div>
+                        <div>
+                            <label for="Número de teléfono:"> Número de teléfono:</label>
+                            <input type="tel" name="Número de teléfono:" placeholder="011 1511111111"/>
+                        </div>
+                        <div>
+                            <label for="Domicilio en:"> Domicilio en:</label>
+                            <select name="Domicilio en:">
+                                <option value="CABA">Capital Federal</option>
+                                <option value="GranBsAS">Gran Buenos Aires </option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Correo electrónico:">Correo electrónico:</label>
+                            <input type="email" name="Correo electrónico:" placeholder="usuario@proveedor.com">
+                        </div>
+                        <div>
+                            <label for="Cobertura de salud:">Cobertura de Salud:</label>
+                            <label for="Medicina Prepaga"> Medicina Prepaga</label>
+                            <input type="radio" name="Cobertura de Salud" value="Medicina Prepaga">
+                            <label for="Obra Social"> Obra Social</label>
+                            <input type="radio" name="Cobertura de Salud" value="Obra Social">
+                            <label for="Particular"> Particular</label>
+                            <input type="radio" name="Cobertura de Salud" value="Particular">
+                        </div>
+                        <div>
+                            <label for="modalidad de atención:">Modalidad de Atención:</label>
+                            <label for="Presencial"> Presencial<label>
+                            <input type="radio" name="modalidad de atención" value="Presencial">
+                            <label for="Virtual"> Virtual</label>
+                            <input type="radio" name="modalidad de atención" value="Virtual">
+                        </div>
+                        <div>
+                            <label for="Mensaje">Mensaje</label>
+                        </div>
+                        <div>
+                            <textarea rows="15" cols="60" placeholder="Motivo de consulta"></textarea>
+                        </div>
+                        <div>
+                            <label for="Términos y Condiciones">Acepto que me contacten a partir de los datos consignados en el presente formulario.</label>
+                            <input type="checkbox" name="Términos y Condiciones" value="Acepto que me contacten a partir de los datos consignados en el presente formulario">
+                        </div>
+                        <div>
+                            <input type="reset" name="Limpiar formulario" value="Limpiar formulario">
+                            <input type="submit" name="Enviar" value="Enviar">
+                        </div>
+                 </fieldset>
+            </form>
+        </section>
+        <section id="mapa">
+                <div>
+                    <p>Dirección: Avenida Santa Fe 1731 CABA</p>
+                    <p>Cómo llegar:</p>
+                    <p>Colectivos 10, 12, 37, 39, 101, 108, 124, 132, 150, 152</p>
+                    <p>Subte: Linea D - Estación Callao</p>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3398923047207!2d-58.394619584592206!3d-34.59556576457423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabe79d8b359%3A0xffbd14117692a803!2sAv.%20Santa%20Fe%201731%2C%20C1019%20CABA!5e0!3m2!1ses-419!2sar!4v1627524416285!5m2!1ses-419!2sar" width="600" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        © 2021 by Manuel Marasco. Contacto: vmanuel.marasco@gmail.com
+    </footer>
+</body>
+</html>
