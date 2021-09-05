@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist";
+    list-style-type: none;
+    
+}
+ /* Estructura del Index */
+
+.grid-index{
+    display: grid;
+    grid-template-areas:
+    "menu menu"
+    "encabezado encabezado"
+    "idexmain indexmain"
+    "pie pie";
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    background-image: linear-gradient(#E4E5E5, #F2F4F4);
+ }
+header{
+    grid-area: encabezado;
+    background-color: #98CAC0;
+    text-align: center;
+    margin-left: 15px;
+}
+#header_index{
+    width: 55%;
+}
+nav{
+    grid-area: menu;
+    background-color: #98CAC0;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+ul :hover{
+    border-bottom: 2px color #303030;
+
+}
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
+.texto-nav{
+    text-decoration:none;
+    color: #303030;
+    
+}
+li{
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+}
+
+#index_main{
+    grid-area: indexmain;
+
+}
+footer{
+    grid-area: pie; 
+    text-align: center;
+}
+
+#grid-main_index{
+    display: grid;
+    grid-template-areas:
+    "mainh2 indexfoto"
+    "indexmaindiv indexfoto"
+    ;
+    text-align: center;
+    margin-left: 15px;
+}
+#grid-main_index_h2{
+    grid-area: mainh2;
+    font-size: 200%;
+    margin-top: 90px; 
+}
+#grid-main_index_div{
+    grid-area: indexmaindiv;
+    transform: translate(0px, -150px)
+
+}
+#grid-main_index_foto{
+    grid-area: indexfoto;
+    transform: translate(15px, -137px) scale(0.9, 0.9);
+}
+#iracontacto{
+    color: #303030;
+}
+.text-ir_contacto {
+    text-decoration: none;
+    color: #303030;
+}
+
+/* Estructura Acerca de */
+
+.grid-acerca_de{
+    display: grid;
+    grid-template-areas:
+    "menu"
+    "encabezado"
+    "main-acerca_de"
+    "pie";
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    background-image: linear-gradient(#E4E5E5, #F2F4F4);
+ }
+ #main-acerca_de{
+    grid-area: main-acerca_de;
+    display: grid;
+    grid-template-areas:
+    "formación experiencia"
+    "enfoque enfoque"
+    "serv_contacto serv_contacto"
+    ;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    padding: 15px; 
+ }
+ #formacion{
+    grid-area: formación;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+ }
+ #experiencia{
+    grid-area: experiencia;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+ }
+ #enfoque{
+    grid-area: enfoque; 
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+ }
+#acerca_contacto{
+    grid-area: serv_contacto;
+    color: #303030;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 50px;
+}
+#acerca_contacto a:hover{
+    border-bottom: 2px solid #303030;
+}
+/* servicios */
+.grid-servicios{
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "encabezado"
+    "mainservicio"
+    "pie";
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    background-image: linear-gradient(#E4E5E5, #F2F4F4);
+ }
+
+#main-servicios{
+    grid-area: mainservicio;
+    display:grid;
+    grid-template-areas:
+    "terapia psicodiag"
+    "mind ansiedad"
+    "ataques rumi"
+    "gastro gastro";
+    margin: 40px;
+    padding: 40px;
+
+}
+#psico_indiv{
+    grid-area: terapia;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: #98CAC0 solid;
+
+}
+
+#psicodiag{
+    grid-area: psicodiag;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: #98CAC0 solid;
+}
+#mind{
+    grid-area: mind;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: #98CAC0 solid;
+}
+#ansiedad{
+    grid-area: ansiedad;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: #98CAC0 solid;
+}
+#ataques{
+    grid-area: ataques;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: #98CAC0 solid;
+}
+#rumi{
+    grid-area: rumi;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: #98CAC0 solid;
+}
+#gastro{
+    grid-area: gastro;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: #98CAC0 solid;
+}
+
+/* Contacto y ubicación */
+.grid-contacto{
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "encabezado"
+    "maincontacto"
+    "pie"
+    ;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    background-image: linear-gradient(#E4E5E5, #F2F4F4);
+ }
+ #main_contacto{
+     grid-area: maincontacto;
+     display: grid;
+     grid-template-areas:
+     "formulario_contacto mapa";
+     margin: 20px;
+     padding: 20px;
+     justify-content: space-between;
+     
+ }
+
+#formulario_contacto{
+    grid-area: formulario_contacto; 
+
+}
+#mapa{
+    grid-area: mapa;
+}
+
+#div_contacto{
+    justify-content: space-between;
+}
